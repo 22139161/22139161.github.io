@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple website with a banner and navigation bar.">
+    <title>Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <img src="images/banner.png" alt="Celtec Games banner" class="center">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+		
+		<script>	
+				var Digital = new Date();
+	var hours = Digital.getHours();
+
+	if (hours >= 5 && hours <= 11) 
+    document.write('<b>Good morning and welcome to our site.</b>');
+	else if (hours == 12) 
+    document.write('<b>Good afternoon. We appreciate your visit.</b>');
+	else if (hours >= 13 && hours <= 17) 
+    document.write('<b>Good afternoon. Thank you for stopping by.</b>');
+	else if (hours >= 18 && hours <= 20) 
+    document.write('<b>Good evening. We hope you are having a pleasant day.</b>');
+	else if (hours >= 21 && hours <= 23) 
+    document.write('<b>Good evening. Thank you for visiting us at this hour.</b>');
+	else 
+    document.write('<b>We appreciate your visit, even at this late hour.</b>');
+    </script>	
+        <main>
+            <h2 style="text-align:center">Our Games</h2>
+
+            <div class="product-container">
+                <div class="card">
+                    <img src="images/product1.png" alt="Ground Zero: Combat">
+                    <h1>Ground Zero: Combat</h1>
+                    <p class="price">£29.99</p>
+                    <p>Some text about the game. lorem ipsum.</p>
+                </div>
+                <div class="card">
+                    <img src="images/game2.png" alt="Ground Zero: Combat">
+                    <h1>Phantom Strike</h1>
+                    <p class="price">£29.99</p>
+                    <p>Some text about the game. lorem ipsum.</p>
+                </div>
+                <div class="card">
+                    <img src="images/game3.png" alt="Ground Zero: Combat">
+                    <h1>Blacksite: Retribution </h1>
+                    <p class="price">£29.99</p>
+                    <p>Some text about the game. lorem ipsum.</p>
+                </div>
+                <div class="card">
+                    <img src="images/game4.png" alt="Ground Zero: Combat">
+                    <h1>Ground Zero: Combat</h1>
+                    <p class="price">£29.99</p>
+                    <p>Some text about the game. lorem ipsum.</p>
+                </div>
+                <div class="card">
+                    <img src="images/game5.png" alt="Ground Zero: Combat">
+                    <h1>Ground Zero: Combat</h1>
+                    <p class="price">£29.99</p>
+                    <p>Some text about the game. lorem ipsum.</p>
+                </div>
+                <div class="card">
+                    <img src="images/product1.png" alt="Ground Zero: Combat">
+                    <h1>Ground Zero: Combat</h1>
+                    <p class="price">£29.99</p>
+                    <p>Some text about the game. lorem ipsum.</p>
+                </div>
+            </div>
+        </main>
+            <footer>
+                <div class="footer-content">
+                    <ul class="footer-links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="aboutus.html">About</a></li>
+						<li><a href="products.html">Products</a></li>
+						<li><a href="contactus.html">Contact</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                    <div class="footer-copyright">
+                        <p>&copy; 2025 Celtec Games. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+
+        <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">↑</button>
+    </div>
+
+    <script>
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.getElementById("scrollToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollToTopBtn").style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

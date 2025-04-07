@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A simple website with a banner and navigation bar.">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+    <header>
+		<img src="images/banner.png" alt="Celtec Games banner" width="200" class="center">
+    </header>
+    <nav>
+        <ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="aboutus.html">About</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="contactus.html">Contact</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+	<script>	
+			var Digital = new Date();
+	var hours = Digital.getHours();
+
+	if (hours >= 5 && hours <= 11) 
+    document.write('<b>Good morning and welcome to our site.</b>');
+	else if (hours == 12) 
+    document.write('<b>Good afternoon. We appreciate your visit.</b>');
+	else if (hours >= 13 && hours <= 17) 
+    document.write('<b>Good afternoon. Thank you for stopping by.</b>');
+	else if (hours >= 18 && hours <= 20) 
+    document.write('<b>Good evening. We hope you are having a pleasant day.</b>');
+	else if (hours >= 21 && hours <= 23) 
+    document.write('<b>Good evening. Thank you for visiting us at this hour.</b>');
+	else 
+    document.write('<b>We appreciate your visit, even at this late hour.</b>');
+    </script>
+	
+	<main>
+        <h2 class="blog-title">Welcome to the Celtec Games Blog!</h2>
+
+        <div class="blog-section">
+            <div class="blog-post">
+                <img src="images/gamedev.jpg" alt="Blog Image 1">
+                <div class="blog-text">
+                    <h3>Phantom Strike: A Stealth-Action Game Like No Other</h3>
+                    <p>The shadows are alive, and they belong to you. I’m excited to finally pull back the curtain on my latest project: Phantom Strike, a tactical stealth-action game where every move could mean the difference between a flawless execution and a deadly confrontation.</p>
+                    <h4>The Essence of Phantom Strike</h4>
+                    <p>In Phantom Strike, you step into the role of a ghost operative—an elite agent trained to infiltrate, eliminate, and disappear. The game blends methodical stealth with high-stakes combat, giving players the freedom to approach each mission with precision or ruthless efficiency. Whether you prefer silent takedowns in the dark or orchestrating chaos with calculated strikes, the choice is yours.</p>
+                    <h4>Core Mechanics and Gameplay</h4>
+                    <p>The heart of Phantom Strike lies in its dynamic systems. Light and sound play critical roles—stay in the darkness to remain unseen, or use distractions to manipulate enemy patrols. The game rewards patience but doesn’t punish aggression; if stealth fails, you’ll need to adapt quickly, using a mix of firearms, melee combat, and environmental traps to survive.</p>
+                    <p>Advanced AI ensures that enemies learn from your tactics. Guards will investigate suspicious activity, call for reinforcements, and adapt their strategies based on your previous actions. No two playthroughs will feel exactly the same.</p>
+                    <h3>Intel drops soon. Stay frosty.</h3>
+                </div>
+            </div>
+            <div class="blog-post">
+                <img src="images/gamedev2.jpg" alt="Blog Image 2">
+                <div class="blog-text">
+                    <h3>BlackSite: Retribution - The Tactical Shooter That Plays for Keeps</h3>
+                    <p>This isn't another run-and-gun power fantasy. BlackSite: Retribution is a brutal, methodical tactical shooter where every decision carries weight and every mistake carries consequences. Set in the shadowy world of deniable operations, you'll lead a team of disavowed operatives through high-stakes missions where the only extraction plan is the one you make yourself.</p>
+                    <h4>Core Combat Experience</h4>
+                    <p>Ballistics matter here - bullets penetrate different materials realistically, suppression effects blur your vision, and wounds impact your mobility. The AI doesn't cheat, but it doesn't need to - enemies communicate, flank intelligently, and exploit any weakness in your position. Your arsenal is fully customizable but deliberately limited - you'll need to manage every round in your magazine and every piece of equipment in your loadout.</p>
+                    <h4>A Campaign Without Heroes</h4>
+                    <p>The single-player narrative drops you into a chain of covert operations across global black sites, each mission revealing another layer of a conspiracy that reaches higher than you imagined. There are no good guys here - just professionals trying to complete objectives and maybe, if they're lucky, survive the aftermath. Expect morally ambiguous choices that affect both your squad's loyalty and mission outcomes.</p>
+                    <p>Currently in development, BlackSite: Retribution aims to bring back the tension and tactical depth missing from modern shooters. This is a game where smart play beats fast reflexes, where planning matters more than twitch skills, and where survival is the only victory condition that counts.</p>
+                    <h3>Intel drops soon. Stay frosty.</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">↑</button>
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Celtec Games. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+	
+    <script>
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.getElementById("scrollToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollToTopBtn").style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
