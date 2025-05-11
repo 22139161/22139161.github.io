@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple website with a banner and navigation bar.">
+    <title>Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <img src="images/banner.png" alt="Celtec Games banner" class="center">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <h2 style="text-align:center">Our Games</h2>
+
+            <div class="product-container">
+                <div class="card" id="game1">
+                    <img src="images/game1.jpg" alt="Call of Duty: Modern Warfare">
+                    <h1>Call of Duty: Modern Warfare</h1>
+                    <p class="price">£59.99</p>
+                    <p>Get ready for an intense first-person shooter experience.</p>
+                </div>
+                <div class="card" id="game2">
+                    <img src="images/game2.jpg" alt="Minecraft">
+                    <h1>Minecraft</h1>
+                    <p class="price">£19.99</p>
+                    <p>Build, explore, and survive in a blocky world full of possibilities.</p>
+                </div>
+                <div class="card" id="game3">
+                    <img src="images/game3.jpg" alt="Fortnite">
+                    <h1>Fortnite</h1>
+                    <p class="price">Free</p>
+                    <p>Battle to be the last one standing in this action-packed battle royale game.</p>
+                </div>
+                <div class="card" id="game4">
+                    <img src="images/game4.jpg" alt="The Witcher 3: Wild Hunt">
+                    <h1>The Witcher 3: Wild Hunt</h1>
+                    <p class="price">£39.99</p>
+                    <p>Embark on an epic RPG journey through a dark fantasy world.</p>
+                </div>
+                <div class="card" id="game5">
+                    <img src="images/game5.jpg" alt="Apex Legends">
+                    <h1>Apex Legends</h1>
+                    <p class="price">Free</p>
+                    <p>Join a squad and compete in this fast-paced battle royale game.</p>
+                </div>
+                <div class="card" id="game6">
+                    <img src="images/game6.jpg" alt="Grand Theft Auto V">
+                    <h1>Grand Theft Auto V</h1>
+                    <p class="price">£29.99</p>
+                    <p>Experience the thrill of crime and chaos in the streets of Los Santos.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Celtec Games. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">↑</button>
+    </div>
+
+    <script>
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.getElementById("scrollToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollToTopBtn").style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
